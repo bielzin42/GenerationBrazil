@@ -1,0 +1,21 @@
+<meta   charset="utf-8">
+
+<script>
+
+var continua, contador = 0, nome;
+
+continua = prompt("Você deseja  iniciar o cadastro?");
+
+while(continua == "s" || continua == "Sim" || continua == "S" || continua == "sim")
+{
+    nome = prompt("Informe o seu nome: ");
+    contador++;
+    continua = prompt("Você deseja continuar o cadastro? ");
+    contador = contador;
+}
+if(contador > 0 )
+{
+    alert(contador);
+}
+
+</script>

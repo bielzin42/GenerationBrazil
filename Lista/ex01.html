@@ -1,0 +1,27 @@
+<script>
+
+var num1 = [];
+
+for(count = 0; count < 3; count++)
+{
+    num1[count] = parseInt(prompt("Digite um número: "));
+    
+}
+
+if(num1[0] > num1[1] && num1[0] > num1[2])
+{
+    document.write(`Esse é o maior número: ${num1[0]} `);
+}
+else
+{
+    if(num1[1] > num1[0] && num1[1] > num1[2])
+    {
+        document.write(`Esse é o maior número: ${num1[1]}`);
+    }
+    else
+    {
+        document.write(`Esse é o maior número: ${num1[2]}`);
+    }
+}
+
+</script>

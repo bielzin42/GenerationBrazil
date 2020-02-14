@@ -1,0 +1,29 @@
+<meta   charset="utf-8">
+<script>
+
+var nome, n1, n2, media;
+		
+
+	nome = prompt ("Qual é o seu nome? ");		
+	n1 = parseFloat(prompt("qual é a sua nota 1? "));
+	n2 = parseFloat(prompt("qual é a sua nota 2? "));
+				
+	media = (n1+n2)/2;
+
+	if (media <= 5)
+	{
+		alert(nome + ", sua média foi: " + media.toFixed(2) + ", você foi reprovado.");
+	}
+	else
+	{
+	    if(media > 5 && media < 7)
+		{
+			alert(nome +", sua média foi: " + media.toFixed(2) + ", você terá que fazer o exame.");
+		}
+		else
+		{
+			alert(nome + ", sua média foi: " + media.toFixed(2) + ", você foi aprovado.");
+		}
+    }
+
+</script>

@@ -1,0 +1,32 @@
+<script>
+
+//recebe tres vetores a,b,c respectivamente onde a = cinco numeros
+//passados pelo usuario, b = a*2 e c = a+b;
+
+var a = [], b = [], c = [], contador = 0;
+
+while(contador <= 4)
+{
+    a[contador] = parseInt(prompt("Digite um número: "));
+    contador++;
+}
+contador = 0;
+
+while(contador <= 4)
+{
+    b[contador] = a[contador]*2;
+    contador++
+}
+
+contador = 0;
+
+while(contador <= 4)
+{
+    c[contador] = (a[contador] + b[contador]);
+    contador++    
+}
+
+document.write(`contador = ${contador} <br> var a = ${a} <br> B = ${b} <br> C = ${c}`);
+
+
+</script>

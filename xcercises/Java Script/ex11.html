@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+
+<script> 
+
+
+	var anoNascimento, anoAdmissao, codigoColaborador, anoAtual, idade, tempoEmpresa;
+
+	codigoColaborador = prompt("Qual é seu código de colaborador? ");	
+	anoNascimento = parseInt(prompt("Ano de nascimento "));	
+	anoAdmissao = parseInt(prompt("Em que ano você foi admitido? "));
+	anoAtual = 2020;
+	idade = anoAtual - anoNascimento;
+	tempoEmpresa =  anoAtual - anoAdmissao;
+
+	if (idade >= 60 && tempoEmpresa >= 25 || idade > 65 || tempoEmpresa > 30)
+	{
+		console.log ("Você pode requerer aposentadoria, já que sua idade é " + idade + " anos e seu tempo trabalhado é: " + tempoEmpresa + " Anos.");
+	}
+	else
+	{
+		console.log ("Você não pode requerer aposentadoria, já que sua idade é " + idade + " anos e seu tempo de trabalho é: " + tempoEmpresa + " Anos.");
+	}
+	
+
+
+</script>

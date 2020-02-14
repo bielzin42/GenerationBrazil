@@ -1,0 +1,19 @@
+<script>
+//declarando um vetor de 5 posições
+var nomes = [5], virgula = ", ";
+
+
+for (var count = 0; count < 5; count++)
+{
+    nomes[count] = prompt("Informe seu nome: ");    
+}
+
+for (var count = 0; count < 5; count++)
+{
+document.write(nomes[count])
+    if(count < 4)
+    {
+        document.write(", ");
+    }
+}  
+</script>

@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<script>
+
+var nota1,nota2,nota3,media, nome, total, resultado;
+		//entrada
+		nome = prompt("Qual é o seu nome? ");		
+		nota1 = parseFloat(prompt(nome + ", qual foi sua nota 1? "));		
+		nota2 = parseFloat(prompt(nome + ", qual foi sua nota 2? "));		
+		nota3 = parseFloat(prompt(nome + ", qual foi sua nota 3? "));
+		
+		//processamento
+		
+		total = nota1 + nota2 + nota3;
+		media = total/3;
+		
+		if (media >= 7)
+		{
+			resultado = "Aprovado";
+		}
+		else
+		{
+			resultado = "Reprovado"	;
+		}
+		
+		//saida
+		alert( nome + ", você teve média " + media.toFixed(1) 
+		+ " e foi " + resultado );
+		//variavel.toFixed(numero de casas decimais)
+</script>

@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script>
+
+    var salario, totalSalario = 0, contador = 0, media;
+		
+		
+	while (contador <= 4)
+	{
+		salario = parseFloat(prompt("qual é o seu salário?"));		
+		totalSalario = salario + totalSalario;
+		contador++;
+	}
+	//alert(contador);
+    //em qualquer divisão, contador > 0 e contador != 1;
+    if (contador > 0 && contador != 1)
+    {
+	    media = totalSalario/contador;
+        console.log("O total dos salários somados foi: " + totalSalario + " e a média dos salários é: " + media);
+    }
+    else
+    {
+        alert("impossível dividir por 0");
+    }
+	
+
+</script>

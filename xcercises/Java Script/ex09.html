@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script> 
+//.tofixed
+var salario, novo, nome;
+
+		nome = prompt("Qual é o seu nome? ");		
+		salario = parseFloat(prompt("Qual é o seu salário atual? "));
+
+		if(salario >= 5000)
+		{
+			novo = (salario*0.05)+salario;
+			//novo = (salario * 5/100)+salario;
+		}
+		else
+		{
+			novo = (salario*0.10)+salario;
+		}		
+		console.log(nome + ", Seu salário antigo era " + salario + " seu novo salário será " + novo.toFixed(2));
+
+</script>

@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+
+<script>
+var salario, totalSalario = 0, media;
+
+for(var contador = 0; contador <=4; contador++)
+{
+    salario = parseFloat(prompt("Qual é o seu salário?"));
+    totalSalario = salario + totalSalario;
+
+}
+
+media = totalSalario/contador;
+
+document.write(`A média salarial é : ${media}<br> a quantidade de salários digitados foi ${contador}<br> a soma total dos salários é ${totalSalario}`);
+
+</script>
