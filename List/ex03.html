@@ -1,0 +1,61 @@
+<meta charset="utf -8">
+
+<script>
+//calcular operações básicas para dois números(somar, subtrair dividir e multiplicar);
+
+var num1, num2, result, choice, continua;
+continua =  "S"
+while(continua == "S" || continua == "s")
+{
+    choice = parseInt(prompt("Bem vindo a Calculadora, o que deseja fazer? \n 1 - Soma \n 2 - Subtração \n 3 - Divisão \n 4 - Multiplicação "));
+    //soma:
+    if (choice == 1)
+    {
+    num1 = Number(prompt("Soma: digite o numero 1"));
+    num2 = Number(prompt("Soma: digite o numero 2"));
+    result = num1+num2;
+    alert(`${num1} + ${num2} = ${result}`);
+    } 
+        else
+    {   
+        //subtrai
+        if(choice == 2)
+        {
+        num1 = Number(prompt("Subtração: digite o numero 1"));
+        num2 = Number(prompt("Subtração: digite o numero 2"));
+        result = num1-num2;
+        alert(`${num1} - ${num2} = ${result}`);
+        }
+        else
+        {   
+            //divide
+            if(choice == 3)
+            {
+                num1 = Number(prompt("Divisão: digite o numero 1"));
+                num2 = Number(prompt("Divisão: digite o numero 2"));
+                result = num1/num2;
+                //tratando isNaN
+                if(result >= 0 || result < 0 )
+                {
+                    alert(`${num1} / ${num2} = ${result}`);
+                }
+                else 
+                {
+                    alert("numero digitado inválido");
+                }
+            }
+            else
+            {
+                if(choice == 4)
+                {
+                num1 = Number(prompt("Multiplicação: digite o numero 1"));
+                num2 = Number(prompt("Multiplicação: digite o numero 2"));
+                result = num1*num2;
+                alert(`${num1} x ${num2} = ${result}`);
+                }
+            }
+            continua = prompt("Deseja fazer alguma operação? S/N");
+        }
+    } 
+} 
+</script>
