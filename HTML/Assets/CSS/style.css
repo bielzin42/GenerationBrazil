@@ -1,0 +1,43 @@
+/* comentario  */
+
+/* sintaxe do CSS:
+elemento {propriedade:valor} ou elemento {propriedade:valor;propriedade:valor} */
+
+/*  usando um seletor de elemento */
+h1
+{
+    color:rgb(0, 0, 0); 
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* usando um seletor de ID: */
+
+#paragrafo1 
+{
+    color: rgb(127, 255, 0);
+    text-align: left;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0);
+}
+#paragrafo2
+{
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-family: 'Indie Flower', cursive;
+    font-size: 29px;
+    font-weight: bold;
+    background-color: chartreuse;
+}
+.paragrafo3
+{
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+}
+.paragrafo4
+{
+    font-family: 'Indie Flower', cursive;
+    color: crimson;
+}
