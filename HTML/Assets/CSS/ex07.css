@@ -1,0 +1,52 @@
+/* primeira coisa a se fazer: seletor universal, tirar margem e padding */
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    width: 1200px;
+    height: 185px;
+    background-color: beige;
+}
+
+nav
+{
+    width: 1200px;
+    height: 70px;
+    background-color: blanchedalmond;
+}
+
+aside
+{
+    width: 280px;
+    height: 1000px;
+    background-color: burlywood;
+    float: left;
+}
+
+section
+{
+    width: 920px;
+    height: 1000px;
+    background-color: rgb(221, 133, 18);
+    float: right;
+}
+
+footer
+{
+    width: 1200px;
+    height: 200px;
+    background-color: crimson;
+    clear: both;
+}
+/* limitar os idens dentro da "caixa" para o limite de px da página. */
+
+#caixa
+{
+    width: 1200px;
+    margin: 0 auto;
+}

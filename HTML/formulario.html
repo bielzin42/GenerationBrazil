@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation Brasil Ex09</title>
+    <link rel="stylesheet" href="../HTML/Assets/CSS/formulario.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <br>
+    <br>
+    <div id="caixaformulario">
+    <form action="#" method="GET">
+            <label for="">Nome</label>
+            <input type="text" name="text" maxlength="22" size="18" placeholder="Digite seu nome..." required>
+            <br>
+            <br>
+            <label for="">idade</label>
+            <input type="number" name="idade" min="18" max="29">
+            <br>
+            <br>
+            <label for="">Data de nascimento</label>
+            <input type="date" name="Nascimimento">
+            <br>
+            <br>
+            <label for="">Observação: </label>
+            <textarea rows="4" cols="20" name="Observacao" maxlength="240"></textarea>
+            <br>
+            <br>
+            <label for="name">estado</label>
+            <select name="estados" id="estados">
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+            <br>
+            <br>
+            <label for="senha">digite sua senha</label>
+            <input type="password" name="senha" id="">
+            <br>
+            <br>
+            
+            <input type="radio" name="sexo" id="M" value="M">
+            <label for="">menino</label>
+            <br>
+            <input type="radio" name="sexo" id="F" value="F">
+            <label for="">menina</label>
+            <br><br>
+            <label for="">Almoço
+                <input type="checkbox">
+            </label>
+            
+            <br>
+            
+            <label for="">Transporte
+                <input type="checkbox">
+            </label>
+            
+            <br><br>
+            
+            <input id="bot1" type="submit" value="Enviar">
+            <input  type="reset" value="Limpar Campos">
+            
+            
+        </div>
+        
+    </form>
+</body>
+</html>

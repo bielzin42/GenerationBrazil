@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0014)about:internet -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generation - Ex04</title>
     <!-- como colocar um ícone na aba -->
-    <link rel="icon" href="Assets/Images/cr.jpg">
+    <link rel="icon" href="file:///C:/Users/pricilla.scsilva/Desktop/bielzin42/GenerationBrazil/HTML/Assets/Images/cr.jpg">
     <style>
-        /* css interno */
-        header{background-color: red; width: 44px; height: 18px;}
-        nav{background-color: royalblue; width: 68px; height: 18px;}
+        /* css interno 
+        organizar os seletores do mais amplo pro mais
+        específico. */
+        /* body{background-color: rgba(0, 0, 0, 0.205);} */
+        /* box sizin' para não sair dos limites */
+        /* resetar margin e padding */
+        
+        * {box-sizing: border-box; margin:0; padding:0;}
+        header{background-color: red; width: 600px; height: 100px;}
+        nav{background-color: royalblue; width: 100%; height: 80px;}
+        main{background-color: cornflowerblue; width: 600px; height: 420px;}
+        article{background-color: darkgreen; width: 400px;height: 420px; padding: top 10px; float: left;}
+        section{background-color: rgb(233, 195, 101); width: 350px; height: 200px; margin-left: 25px;}
+        aside{background-color: dimgray; width: 200px;height: 420px; float: right;}
+        footer{background-color: thistle;width: 600px; height: 100px;}
+        #caixa{width: 600px; height: 700px; margin: 50px auto; text-align: center;}
+        #sec1{margin-top: 10px;}
+        #sec2{margin-bottom: 10px;}
     </style>
 </head>
 <body>
-    <header>
-        header
-    </header>
-
-   <nav>
-       navigation
-   </nav>
-
-   <main>
-
-        <article>
-            <section>Section dentro do article</section>
-            <section>Section dentro do article</section>
-        </article>
+    
+    <div id="caixa">
+        <header>
+            header
+        </header>
         
-    <aside>Aside</aside>
+        <nav>
+            navigation
+        </nav>
+        
+        <main>
+            
+            <article>
+                <section style="margin-top: 10px;" id="sec1">Section dentro do article</section>
+                <section id="sec2">Section dentro do article</section>
+            </article>
+            
+            <aside>Aside</aside>
+            
+        </main>
+        
+        <footer>footer</footer>
+    </div>
 
-   </main>
-
-   <footer>footer</footer>
-</body>
-</html>
+</body></html>

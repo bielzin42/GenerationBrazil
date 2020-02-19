@@ -1,0 +1,43 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+div
+{
+    background-color: rgba(238, 247, 199, 0.322);
+    width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    padding: 15px; 
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 5px;
+
+}
+
+h1
+{
+    text-align: center;
+    color: rebeccapurple;
+}
+
+textarea
+{
+    resize: none;
+}
+
+body
+{
+    background-image: url(../Images/cr.jpg);
+    background-size: cover;
+}
+
+#bot1
+{   
+    background-color: yellowgreen;
+    color: rgb(0, 0, 0)0, 0, 0);
+}
