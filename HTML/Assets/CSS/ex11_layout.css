@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 1170px;
+    height: 320px;
+    background-color: rgba(137, 43, 226, 0.349)
+}
+
+#d300x300{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(72, 9, 131);
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+#d800x90{
+    width: 800px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.329);
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    
+}
+
+.meninos{
+    margin-top: 110px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#d71{
+    width: 70px;
+    height: 100px;
+    background-color: rgba(22, 211, 101, 0.644);
+    float: right;
+}
+#d72{
+    width: 70px;
+    height: 100px;
+    background-color: aquamarine;
+    float: right;
+}
+#d73{
+    width: 70px;
+    height: 100px;
+    background-color: rgba(165, 42, 42, 0.651);
+    float: right;
+}
+mainsaside{
+    width: 370px;
+    height: 720px;
+}
+
+#aside1{
+    background-color: rgba(128, 255, 0, 0.459);
+    width: 370px;
+    height: 720px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+#aside2{
+    background-color: rgba(0, 128, 0, 0.479);
+    width: 370px;
+    height: 720px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+#aside3{
+    background-color: rgba(45, 226, 69, 0.637);
+    width: 370px;
+    height: 720px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+downside{
+    width: 575px;
+    height: 490px;
+    clear: both;
+}
+
+#asideb1{
+    width: 575px;
+    height: 490px;
+    background-color: rgba(0, 0, 255, 0.52);
+    float: left;
+    margin-top: 20px;
+    margin-right: 30px;
+    
+    
+}
+#asideb2{
+    width: 575px;
+    height: 490px;
+    background-color: rgba(0, 0, 255, 0.52);
+    float: left;
+    margin-top: 20px;
+    margin-right: 30px;
+    
+}
+
+lowermain{
+    width: 1170px;
+    height: 720px;
+}
+
+#lowerm1{}
+#lowerm2{}
+
+sides{
+    width: 270px;
+    height: 330px;
+}
+
+footer{
+    width: 1170px;
+    height: 200px;
+    clear: both;
+}
