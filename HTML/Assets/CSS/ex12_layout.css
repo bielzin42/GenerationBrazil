@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+aside{
+    width: 400px;
+    height: 1500px;
+    background-color: aqua;
+    float: left;
+
+}
+
+header{
+    width: 800px;
+    height: 250px;
+    background-color: aquamarine;
+    float: left;
+    margin-bottom: 40px;
+}
+
+article{
+    width: 800px;
+    height: 150px;
+    background-color: blue;
+    float: left;
+    margin-bottom: 20px;
+}
+
+div {
+    width: 340px;
+    height: 285px;
+    background-color: green;
+    float: left;   
+    margin-top: 40px;
+}
+
+.direita{
+    margin-left: 40px;
+}
+
+.esquerda {
+    margin-left: 40px;
+}
+
+#box {
+    width: 1200px;
+    margin: 0 auto;
+}
