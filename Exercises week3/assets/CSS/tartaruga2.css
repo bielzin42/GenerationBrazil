@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: orchid;
+}
+div {
+    width: 30%;
+}
+
+#box {
+    margin: 0 auto;
+} 
