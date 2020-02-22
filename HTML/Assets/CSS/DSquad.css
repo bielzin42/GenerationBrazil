@@ -7,3 +7,11 @@
 .form-group{
     width: 50%;
 }
+
+.form-check-label {
+    font-size: small;
+}
+
+.container-fluid {
+    width: 100%;
+}
