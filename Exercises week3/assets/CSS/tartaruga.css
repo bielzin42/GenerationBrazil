@@ -10,10 +10,12 @@ header {
     background-color: rgb(255, 255, 255);
 }
 
+
+
 h1 {
+    background-color: rgb(255, 255, 255);
     text-align: center;
-    color: #8c4ff3;
-    font-family: 'Noto Sans KR', ;
+    color: #8c4ff3;    
 }
 
 section {
@@ -21,7 +23,7 @@ section {
     height: 20%;
     background-color: rgb(255, 255, 255);
     float: left;
-    font-family: 'Noto Sans KR', ;
+    font-family: 'Noto Sans KR' ;
 
 }
 h4 {
@@ -41,10 +43,70 @@ h4 {
     height: 40%;
     float: left;
     margin-left: 1.5%;
-    font-family: 'Noto Sans KR', ;
+    font-family: 'Noto Sans KR';
 }
 
+@media screen and (max-width: 767px) 
+{
+    *
+    {
+        clear: both;
+    }
+
+    img {
+       display: none;
+    }
+
+    header {
+        margin-left: 0%;
+        width: 100%;
+        background-color: royalblue;
+    }
+    h1 {
+        float: left;
+        background-color: royalblue;
+        color: white;
+    }
+    section {
+        width: 100%;
+        background-color: #8c4ff3;        
+    }
+    h4 {
+        color: white;
+    }
+
+    #ui {
+        float: left;
+        width: 100%;
+        background-color: royalblue;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #saas {
+        float: left;
+        width: 100%;
+        background-color: #8c4ff3;
+        margin-left: 0; 
+        margin-top: 0;
+    }
+    #web {
+        float: left;
+        width: 100%;
+        background-color: royalblue;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    #box 
+    {
+        background-color: royalblue;
+        
+    }
+}
+
+
 #box {
-    width: 780px;
+    width: 100%;
     margin: 0 auto;
+    
 }
