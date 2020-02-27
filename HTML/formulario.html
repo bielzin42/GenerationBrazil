@@ -13,23 +13,24 @@
     <div id="caixaformulario">
     <form action="#" method="GET">
             <label for="">Nome</label>
-            <input type="text" name="text" maxlength="22" size="18" placeholder="Digite seu nome..." required>
+            <input type="text" name="text" id="nome" maxlength="22" size="18" placeholder="Digite seu nome..." required>
             <br>
             <br>
             <label for="">idade</label>
-            <input type="number" name="idade" min="18" max="29">
+            <input type="number" name="idade" min="18" max="29" id="idade">
             <br>
             <br>
             <label for="">Data de nascimento</label>
-            <input type="date" name="Nascimimento">
+            <input type="date" name="Nascimimento" id="nascimento">
             <br>
             <br>
             <label for="">Observação: </label>
-            <textarea rows="4" cols="20" name="Observacao" maxlength="240"></textarea>
+            <textarea rows="4" cols="20" name="observacao" maxlength="240" id="observacao"></textarea>
             <br>
             <br>
             <label for="name">estado</label>
             <select name="estados" id="estados">
+                <option value="" disabled selected>Selecione...</option>
                 <option value="SP">São Paulo</option>
                 <option value="RJ">Rio de Janeiro</option>
                 <option value="MG">Minas Gerais</option>
@@ -37,34 +38,35 @@
             <br>
             <br>
             <label for="senha">digite sua senha</label>
-            <input type="password" name="senha" id="">
+            <input type="password" name="senha" id="senha">
             <br>
             <br>
             
-            <input type="radio" name="sexo" id="M" value="M">
+            <input type="radio" name="sexo" id="m" value="Menino">
             <label for="">menino</label>
             <br>
-            <input type="radio" name="sexo" id="F" value="F">
+            <input type="radio" name="sexo" id="f" value="Menina">
             <label for="">menina</label>
             <br><br>
             <label for="">Almoço
-                <input type="checkbox">
+                <input type="checkbox" id="almoco" name="vales">
             </label>
             
             <br>
             
             <label for="">Transporte
-                <input type="checkbox">
+                <input type="checkbox" id="transporte" name="vales" >
             </label>
             
             <br><br>
             
-            <input id="bot1" type="submit" value="Enviar">
-            <input  type="reset" value="Limpar Campos">
+            <input id="bot1" type="submit" value="Enviar" id="enviar" onclick="mostrar()">
+            <input  type="reset" value="Limpar Campos" id="limparcampos">
             
             
         </div>
         
     </form>
+    <script src="../javascript/assets/js/formulario.js"></script>
 </body>
-</html>
+</html> 

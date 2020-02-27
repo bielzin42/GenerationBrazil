@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    border: solid red 0.5px; 
+    height: auto;
+    /* problema */
+}
+
+li {
+    list-style: none;
+    
+    
+}
+
+h1, h2  {
+    text-align: center;
+}
+.verde {
+    
+    padding: 1%;
+}
+
+.vermelho {
+    background-color: indigo;
+    
+}
+
+
+#caixa {
+    width: 40%;
+    margin:  0 auto; 
+    background-color: rgba(26, 177, 26, 0.719);
+      
+}
+
+
