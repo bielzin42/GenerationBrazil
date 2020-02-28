@@ -1,5 +1,7 @@
 var result = document.getElementById("result");
 
+var number1, number2, resultado;
+
 function onNumberClicked(numberButton){
     
     if(result.innerHTML == "0"){
@@ -11,28 +13,71 @@ function onNumberClicked(numberButton){
 }
 
 function onClearClicked(){
-    result.innerHTML = "0";
+    result.innerHTML = 0;
+    number2=0, number1=0;
 }
 
-function onEqualsClicked(){
-    //TODO implement this function
+function onEqualsClicked()
+{    
+    if(resultado == "+")
+    {
+        number2 = parseInt(result.innerHTML);
+        result.innerHTML = number1 + number2;
+    }
+
+
+    if(resultado == "-")
+    {
+        number2 = parseInt(result.innerHTML);
+        result.innerHTML = number1 - number2; 
+    }
+
+    if(resultado == "*")
+    {
+        number2 = parseInt(result.innerHTML);
+        result.innerHTML = number1 * number2;
+    }
+
+    if(resultado == "/")
+    {
+        number2 = parseInt(result.innerHTML);
+        if(number2 != 0)
+        {
+        result.innerHTML = number1 / number2;
+        }
+        else {
+            alert("Não se divide por zero.")
+        }
+    }
 }
 
 function onDivideClicked(){
-    //TODO implement this function
+    number1 = parseInt(result.innerHTML);
+    resultado = "/"
+    result.innerHTML = "0" 
 }
 
 
 
-function onAddClicked(){
-    //TODO implement this function
+function onAddClicked()
+{
+    number1 = parseInt(result.innerHTML);
+    resultado = "+"
+    result.innerHTML = "0"   
+    
 }
 
-function onSubtractClicked(){
-    //TODO implement this function
+function onSubtractClicked()
+{
+    number1 = parseInt(result.innerHTML);
+    resultado = "-"
+    result.innerHTML = "0" 
 }
 
-function onMultiplyCliked(){
-    //TODO implement this function
+function onMultiplyCliked()
+{
+    number1 = parseInt(result.innerHTML);
+    resultado = "*"
+    result.innerHTML = "0"   
 }
 
