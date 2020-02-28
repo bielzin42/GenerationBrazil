@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 05</title>
+</head>
+<body>
+
+    <script>
+
+        var string = prompt("digite palavras que serão transformadas em UpperCase: ")
+        var stringDivided = string.split(" ");
+        var answer=[];
+        var answer2 = ""
+        
+        for(i = 0; i < stringDivided.length; i++)
+        {
+            answer[i] = stringDivided[i].replace(stringDivided[i].slice(0,1), stringDivided[i].slice(0,1).toUpperCase())
+            answer2 = answer2 + " " + answer[i];
+        }
+        
+        alert(answer2);
+
+    </script>
+    
+</body>
+</html>
