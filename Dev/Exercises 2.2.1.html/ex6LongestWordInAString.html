@@ -9,7 +9,22 @@
 
     <script>
 
-        
+      var word = prompt("Digite Frases: ");
+
+      var vetor = word.split(" ");
+
+      var resposta = "";
+
+      for(i = 0; i < vetor.length; i++)
+      {
+          if(vetor[i].length > resposta.length)
+          {
+             resposta = vetor[i];
+          }
+          
+      }
+      alert(resposta);
+ 
 
     </script>
     
