@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects</title>
+</head>
+<body>   
+        <script>
+            //criando método construtor = constroi o modelo.
+            //modelo = conjunto de atributos(características) e métodos(ações)
+            //Todo modelo começa com letra maiúscula.
+            // metodo construtor
+            function MinhaCaneta(_cor, _tipo, _tamanho, _temTinta, _material, _espessuraPonta, _tampado) {
+                //atributos
+                this.cor = _cor;
+                this.tipo= _tipo;
+                this.tamanho = _tamanho;
+                this.temTinta = (_temTinta || "Sim");
+                this.material = _material;
+                this.espessuraPonta = _espessuraPonta;
+                this.tampado = (_tampado || "Sim");
+            }
+            //fim do metodo construtor
+            //inicio de uma ação
+            MinhaCaneta.prototype.abrir= function(){
+                
+                if(this.tampado == "Sim")
+                {   
+                    var tampa = "Sua caneta estava tampada."
+                    alert(tampa);
+                    this.tampado = "Não";
+                    alert("Sua Caneta foi destampada!");
+                }
+                else
+                {
+                    alert("Caneta já estava sem tampa!!");
+                }
+                
+            }
+            //final da ação abrir
+            MinhaCaneta.prototype.fechar= function(){
+                if(this.tampado == "Sim")
+                {                    
+                    alert("Caneta A caneja já está tampada!");
+                }
+                else
+                {
+                    this.tampado = "Sim";
+                    alert("A caneta foi tampada");
+                }
+            }
+
+            //objetos
+            caneta1 = new MinhaCaneta("preto", "canetão", "10cm", "", "plastico", "5mm", "não"); //instanciar um objeto (criei uma cópia do objeto MinhaCaneta)
+            caneta2 = new MinhaCaneta("azul", "esferográfica", "10cm", "", "metal", "2mm", "não");
+
+            //imprimindo a cor da minha caneta
+
+            // alert(`Cor: ${caneta1.cor} \n Tipo: ${caneta1.tipo} \n Tamanho ${caneta1.tamanho} \n Tem Tinta? ${caneta1.temTinta} \n Material: ${caneta1.material} \n Espessura da ponta: ${caneta1.espessuraPonta} \n com tampa? ${caneta1.tampado}`);
+
+            // alert(`Cor: ${caneta2.cor} \n Tipo: ${caneta2.tipo} \n Tamanho ${caneta2.tamanho} \n Tem Tinta? ${caneta2.temTinta} \n Material: ${caneta2.material} \n Espessura da ponta: ${caneta2.espessuraPonta} \n com tampa? ${caneta2.tampado} `);
+            
+            //comparando as cores e devolvendo diffs
+            if(caneta1.cor == caneta2.cor)
+            {
+                document.write("Não há diferença de cores \n");
+            }
+            else
+            {
+                document.write(`Cores Diferentes: cor da caneta1: ${caneta1.cor} <br> caneta2: ${caneta2.cor}`);               
+            }
+            
+            //utilizando o método abrir() com a caneta2
+
+            // caneta2.abrir();
+            // caneta2.fechar();
+
+            caneta1.fechar()
+        
+        </script>
+</body>
+</html>

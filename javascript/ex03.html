@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ex 03</title>
+</head>
+<body>
+    <input type="text" id="nome" autofocus>
+    <input type="button" value="clique aqui" id="botao">
+
+    <script>
+        try {
+            var nome;
+            document.getElementById("botao").addEventListener('click', function()
+            {   
+                nome = document.getElementById("nome").value
+                alert(`Seu nome é ${nome}`);
+            }) 
+            
+            //criamos um input que recebe textp, uma caixa e texto, id nome
+            //criamos um obtão ao lado dessa caixa, id botao.
+            //abrimos um bloco de código
+            //var nome global
+            // document.getElementById("nome")
+
+            document.getElementById("botao").addEventListener("mouseover", function()
+            {
+                document.getElementById("nome").style.color="red";
+                    document.getElementById("botao").addEventListener("mouseleave", function(){
+                    document.getElementById("nome").style.color="black";
+            })
+        })
+            
+        } catch (error) {
+            document.write(error);
+        }
+        
+
+        
+
+    </script>
+    
+</body>
+</html>

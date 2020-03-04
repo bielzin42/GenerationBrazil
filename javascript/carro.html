@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object Car</title>
+</head>
+<body>
+    <script>
+    
+        function MeuCarro(_marca, _anoFabricacao, _velMaxima, _velAtual){
+            
+            this.marca = _marca;
+            this.ano = _anoFabricacao;
+            this.velMax = parseInt(_velMaxima);
+            this.velAtual = parseInt("0");
+        }       
+        
+        MeuCarro.prototype.acelerar = function(){
+        for(this.velAtual = 0; this.velAtual < this.velMax; this.velAtual++)
+        {
+            document.write(this.velAtual);            
+        }
+        alert(`Sua velocidade era: 0, agora é ${this.velAtual}`)
+    }
+            
+        MeuCarro.prototype.desacelerar = function()
+        {
+            for(this.velAtual = this.velMax; this.velAtual > 0; this.velAtual-- )
+            {
+                document.write("<br>" + this.velAtual);
+            }
+            alert(`Sua velocidade era: ${this.velMax}, agora é ${this.velAtual}`)
+        }
+
+
+
+        meucarro1 = new MeuCarro("gol", "1999", "30", "");
+    
+        meucarro1.acelerar();
+        meucarro1.desacelerar();
+    
+    </script>
+</body>
+</html>
