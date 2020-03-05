@@ -9,6 +9,8 @@
 <body>
     <script>
     
+        try{
+
         function MeuCarro(_marca, _anoFabricacao, _velMaxima, _velAtual){
             
             this.marca = _marca;
@@ -40,6 +42,12 @@
     
         meucarro1.acelerar();
         meucarro1.desacelerar();
+
+        }
+        catch(error)
+        {
+            alert("Erro: " + error);
+        }
     
     </script>
 </body>
