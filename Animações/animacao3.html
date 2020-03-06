@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>anim 3</title>
+    <style>
+        
+        div 
+        {
+            width: 100px;
+            height: 100px;
+            animation-name: alteraPosicao;
+            animation-duration: 10s;
+            position: relative;
+            animation-iteration-count: 20;
+        }
+
+        #load
+        {
+            width: 100px;
+            height: 100px;
+            animation-name: alteraPosicao2;
+            animation-duration: 10s;
+            position: relative;
+            animation-iteration-count: 20;
+            
+        }
+
+
+        @keyframes alteraPosicao {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 200px; top: 0px;}
+            50% {background-color: blue; left: 200px; top: 200px;}
+            75% {background-color: green; left: 0px; top: 200px;}
+            100% {background-color: red; left: 0; top: 0;}
+        }
+
+        @keyframes alteraPosicao2 {
+            0% {background-color: rgb(187, 255, 0); left: 200px; bottom: 0px;}
+            25% {background-color: rgb(192, 39, 167); left: 0px; top: 0px;}
+            50% {background-color: rgb(197, 32, 32); right: 20px; top: 200px;}
+            75% {background-color: rgb(149, 31, 218); left: 0px; top: 200px;}
+            100% {background-color: red; left: 0; top: 0;}
+        }
+    
+    
+    </style>
+</head>
+<body>
+   
+    <div>
+    </div>
+
+<div id="load">
+
+</div>
+
+</body>
+</html>
